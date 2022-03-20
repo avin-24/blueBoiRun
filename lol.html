@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" onclick="jump()">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Boi Run</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .lol{
+            padding-left: 100px;
+        }
+    </style>
+    
+    <script>
+        function changeWidth() {
+        // Will assign a new width, but will override other style properties.
+        document.getElementById("block").setAttribute('style', 'width:200px;');
+    }
+    </script>
+</head>
+<body style="background-color:rgb(36, 36, 36);">
+    <div id="game" class="lol" style="margin: auto;">
+        <div id="character"></div>
+        <div id="block" onclick="changeWidth()"></div>
+    </div>
+    <section align="middle">
+        <input type="button" onclick="rickroll()" value="click this for 10000000 points" style="background-color: rgb(41, 41, 41);">
+        <p id="score" style="font-size: xx-large; margin: auto;">0</p>
+        <a href="https://youtu.be/xvFZjo5PgG0" target="_blank">About us</a>
+    </section>
+<script src= "script.js"></script>
+</html>
